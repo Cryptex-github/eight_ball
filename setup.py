@@ -14,6 +14,7 @@ setup(
     url='https://github.com/Cryptex-github/async-8ball',
     author='cryptex',
     license='Apache-2.0',
+    requirements=requirements,
     packages=setuptools.find_packages(),
     zip_safe=False,
 )
