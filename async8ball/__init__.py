@@ -31,7 +31,9 @@ class ball:
                        "Without a doubt.", 
                        "Yes.", 
                        "Yes – definitely.", 
-                       "You may rely on it."]
+                       "You may rely on it.",
+                       "What do you think?",
+                       "Maybe yes maybe not"]
  async def add_response_from_file(self, filename):
   async with AIOFile(filename, "r") as f:
    choices = await f.read().split("\n")
