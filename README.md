@@ -1,8 +1,8 @@
-# async-8ball
+# async_8ball
 Asynchronous 8ball response generator. 
 Example:
 ```py
-import async-8ball
+import async_8ball
 async def your_function():
- response = await async-8ball.response()
+ response = await async_8ball.response()
 ```
