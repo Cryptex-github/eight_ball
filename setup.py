@@ -5,7 +5,7 @@ with open('README.md') as f:
 
 setup(
     name='async8ball',
-    version='2.0.8',
+    version='2.0.9',
     description='Asynchronous 8ball response generator.',
     long_description_content_type="text/markdown",
     long_description=long_description,
@@ -16,7 +16,7 @@ setup(
     install_requires=["aiofile"],
     python_requires=">=3.4",
     requirements=["aiofile=3.3.3"],
-    keywords=["async", "8ball", "response", "discord", "discord.py", "discord bot", "bot", "py"],
+    keywords=["async", "8ball"],
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
