@@ -2,8 +2,6 @@ from setuptools import setup
 
 with open('README.md') as f:
     long_description = f.read()
-with open('requirements.txt') as f:
-    requirements = f.read().splitlines()
 
 setup(
     name='async8ball',
@@ -16,7 +14,7 @@ setup(
     license='Apache-2.0',
     packages=["async8ball"],
     python_requires=">=3.4",
-    requirements=requirements,
+    requirements=["aiofile=3.3.3"],
     keywords=["async", "8ball", "response", "discord", "discord.py", "discord bot", "bot", "py"],
     classifiers=[
         "Development Status :: 3 - Alpha",
