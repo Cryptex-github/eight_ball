@@ -7,3 +7,9 @@ async def your_function():
  response = await async_8ball.response()
 ```
 Deco Example:
+```py
+from async8ball.decorators import ball_decorator
+@ball_decorator
+def my_function(**kwargs):
+  return kwargs['response']
+```
