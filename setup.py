@@ -4,19 +4,17 @@ with open('README.md') as f:
     long_description = f.read()
 
 setup(
-    name='async8ball',
+    name='eight_ball',
     version='2.0.9',
     description='Asynchronous 8ball response generator.',
     long_description_content_type="text/markdown",
     long_description=long_description,
-    url='https://github.com/Cryptex-github/async8ball',
+    url='https://github.com/Cryptex-github/eight_ball',
     author='cryptex',
     license='Apache-2.0',
-    packages=["async8ball"],
-    install_requires=["aiofile"],
+    packages=["eight_ball"],
     python_requires=">=3.4",
-    requirements=["aiofile=3.3.3"],
-    keywords=["async", "8ball"],
+    keywords=["sync", "8ball"],
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
