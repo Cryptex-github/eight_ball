@@ -28,4 +28,5 @@ class ball:
   for i in response_list:
    self.response_list.append(i)
  async def response(self, question) -> str:
+   random.seed(len(question)*random.randint(0,10))
    return random.choice(self.responses_list)
