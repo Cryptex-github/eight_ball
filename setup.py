@@ -13,6 +13,7 @@ setup(
     author='cryptex',
     license='Apache-2.0',
     packages=["async8ball"],
+    install_requires=["aiofile"],
     python_requires=">=3.4",
     requirements=["aiofile=3.3.3"],
     keywords=["async", "8ball", "response", "discord", "discord.py", "discord bot", "bot", "py"],
