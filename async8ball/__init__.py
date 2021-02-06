@@ -5,5 +5,5 @@ responses_list=["As I see it, yes.", "Ask again later.", "Better not tell you no
 __all__ = "__version__"
 __version__ = "0.1"
 
-async def response(self) -> str:
+async def response() -> str:
   return random.choice(responses_list)
