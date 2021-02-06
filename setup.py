@@ -7,7 +7,7 @@ with open('requirements.txt') as f:
 
 setup(
     name='async8ball',
-    version='2.0.2',
+    version='2.0.3',
     description='Asynchronous 8ball response generator.',
     long_description_content_type="text/markdown",
     long_description=long_description,
