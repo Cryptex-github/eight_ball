@@ -4,6 +4,8 @@ from aiofile import AIOFile
 
 __all__ = ("__version__", "ball")
 __version__ = "2.0"
+class ballException(Exception):
+ pass
 """
 Here we start the ball you can pass in your own asyncio event loop if you wish
 """
