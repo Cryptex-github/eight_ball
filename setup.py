@@ -7,7 +7,7 @@ with open('requirements.txt') as f:
 
 setup(
     name='async8ball',
-    version='2.0.1',
+    version='APLHA 2.0.1',
     description='Asynchronous 8ball response generator.',
     long_description_content_type="text/markdown",
     long_description=long_description,
@@ -18,7 +18,7 @@ setup(
     requirements=requirements,
     keywords=["async", "8ball", "response", "discord", "discord.py", "discord bot", "bot", "py"],
     classifiers=[
-        "Development Status :: 4 - Beta",
+        "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: Apache Software License",
         "Natural Language :: English",
