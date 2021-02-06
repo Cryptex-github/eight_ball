@@ -5,7 +5,7 @@ with open('README.md') as f:
 
 setup(
     name='eight_ball',
-    version='2.0.9',
+    version='3.0',
     description='Asynchronous 8ball response generator.',
     long_description_content_type="text/markdown",
     long_description=long_description,
