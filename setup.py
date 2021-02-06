@@ -5,7 +5,7 @@ with open('README.md') as f:
 
 setup(
     name='async8ball',
-    version='2.0',
+    version='2.0.1',
     description='Asynchronous 8ball response generator.',
     long_description_content_type="text/markdown",
     long_description=long_description,
@@ -13,5 +13,13 @@ setup(
     author='cryptex',
     license='Apache-2.0',
     packages=["async8ball"],
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: Apache Software License",
+        "Natural Language :: English",
+        "Programming Language :: Python :: 3 :: Only",
+        
+    ],
     zip_safe=False,
 )
