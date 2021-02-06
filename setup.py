@@ -4,14 +4,14 @@ with open('README.md') as f:
     long_description = f.read()
 
 setup(
-    name='async_8ball',
+    name='async8ball',
     version='1.1',
     description='Asynchronous 8ball response generator.',
     long_description_content_type="text/markdown",
     long_description=long_description,
-    url='https://github.com/Cryptex-github/async_8ball',
+    url='https://github.com/Cryptex-github/async8ball',
     author='cryptex',
     license='Apache-2.0',
-    packages=["async_8ball"],
+    packages=["async8ball"],
     zip_safe=False,
 )
