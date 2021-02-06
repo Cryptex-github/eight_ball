@@ -27,5 +27,5 @@ class ball:
  async def add_response_from_list(self, response_list):
   for i in response_list:
    self.response_list.append(i)
- async def response(question) -> str:
-   return random.choice(responses_list)
+ async def response(self, question) -> str:
+   return random.choice(self.responses_list)
