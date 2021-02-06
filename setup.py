@@ -15,6 +15,7 @@ setup(
     author='cryptex',
     license='Apache-2.0',
     packages=["async8ball"],
+    python_requires=">=3.4",
     requirements=requirements,
     keywords=["async", "8ball", "response", "discord", "discord.py", "discord bot", "bot", "py"],
     classifiers=[
