@@ -10,8 +10,14 @@ __version__ = "2.0"
 Here we start the ball you can pass in your own asyncio event loop if you wish
 """
 class ball:
- def __init_(self, loop=None):
+ def __init__(self, loop=None):
   self.loop = asyncio.get_event_loop() if loop is None else loop
-  
+
+async def add_response_from_file(filename):
+ pass
+async def override_response_from_file(filename):
+ pass
+async def add_response(response):
+ pass
 async def response(question) -> str:
   return random.choice(responses_list)
