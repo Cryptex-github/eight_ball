@@ -8,9 +8,7 @@ from functools import wraps
 from typing import Callable, List, TypeVar
 
 
-__all__: Tuple[str] = (
-    'ball_decorator',
-)
+__all__: Tuple[str] = ("ball_decorator",)
 
 
 choices: Tuple[str] = (
@@ -38,14 +36,14 @@ choices: Tuple[str] = (
 )
 
 
-PT = TypeVar('PT')
-RT = TypeVar('RT')
+PT = TypeVar("PT")
+RT = TypeVar("RT")
 
 
 def ball_decorator(func: Callable[PT, RT]) -> Callable[PT, RT]:
     @wraps(func)
     def wrapper(*args, **kwargs) -> RT:
-        kwargs['response'] = ball_algorithm_.choice(choices)
+        kwargs["response"] = ball_algorithm_.choice(choices)
         return func(*args, **kwargs)
 
     return wrapper
