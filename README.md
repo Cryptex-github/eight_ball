@@ -14,5 +14,5 @@ Put the ball object under the bot object
 """
 @bot.command()
 async def ball(ctx, *, question):
- await ctx.send(bot.ball.response(question)
+ await ctx.send(bot.ball.response(question))
 ```
