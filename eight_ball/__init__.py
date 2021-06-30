@@ -1,6 +1,5 @@
 import random
 
-
 __all__ = ("__version__", "Ball", "BallException")
 __version__ = "3.0"
 
