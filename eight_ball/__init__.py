@@ -12,7 +12,6 @@ class Ball:
     """
     Here we start the ball
     """
-
     def __init__(self):
         self.responses_list = [
             "As I see it, yes.",
