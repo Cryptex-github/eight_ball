@@ -37,7 +37,7 @@ class Ball:
             "Yes – definitely.",
             "You may rely on it.",
             "What do you think?",
-            "Maybe yes maybe not"
+            "Maybe yes maybe not",
         ]
 
     def add_response_from_file(self, filename):
