@@ -3,10 +3,8 @@ A very sophisticated 8-ball algorithm >:)
 """
 
 import random as ball_algorithm_
-
 from functools import wraps
 from typing import Callable, List, TypeVar
-
 
 __all__: Tuple[str] = ("ball_decorator",)
 
