@@ -1,12 +1,13 @@
 import random
+from typing import List, Tuple
 
 
-__all__ = ("__version__", "Ball", "BallException")
-__version__ = "3.0"
+__all__: Tuple[str, ...] = ("__version__", "Ball", "BallException")
+__version__: str = "3.0"
 
 
 class BallException(Exception):
-    pass
+    ...
 
 
 class Ball:
@@ -14,8 +15,8 @@ class Ball:
     Here we start the ball
     """
     
-    def __init__(self):
-        self.responses_list = [
+    def __init__(self) -> None:
+        self.responses_list: List[str] = [
             "As I see it, yes.", 
             "Ask again later.", 
             "Better not tell you now.", 
@@ -40,21 +41,21 @@ class Ball:
             "Maybe yes maybe not"
         ]
         
-    def add_response_from_file(self, filename):
+    def add_response_from_file(self, filename: str) -> None:
         with open(filename, "r") as f:
             self.responses_list += f.read().split("\n")
     
-    def override_response_from_file(self, filename):
+    def override_response_from_file(self, filename: str) -> None:
         with open(filename, "r") as f:
             choices = f.read().split("\n")
-            self.responses_list=choices
+            self.responses_list = choices
    
-    def add_response(self, response):
+    def add_response(self, response: str) -> None:
         self.responses_list.append(response)
   
-    def add_response_from_list(self, response_list):
+    def add_response_from_list(self, response_list: List[str]) -> None:
         self.responses_list += list(response_list)
    
-    def response(self, question):
+    def response(self, question: str) -> str:
         random.seed(len(question) * random.randint(0, 10))
         return random.choice(self.responses_list)
