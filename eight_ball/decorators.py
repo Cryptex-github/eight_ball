@@ -7,8 +7,7 @@ from typing import Callable
 from typing import List
 from typing import TypeVar
 
-__all__: Tuple[str] = ("ball_decorator",)
-
+__all__: Tuple[str] = ("ball_decorator", )
 
 choices: Tuple[str] = (
     "It is certain",
@@ -33,7 +32,6 @@ choices: Tuple[str] = (
     "My reply is no",
     "I'm not sure, but I do know that you are very sus",
 )
-
 
 PT = TypeVar("PT")
 RT = TypeVar("RT")
