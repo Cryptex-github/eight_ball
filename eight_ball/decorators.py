@@ -1,10 +1,19 @@
-import random
+"""
+A very sophisticated 8-ball algorithm >:)
+"""
+
+import random as ball_algorithm_
 
 from functools import wraps
 from typing import Callable, List, TypeVar
 
 
-choices: List[str] = [
+__all__: Tuple[str] = (
+    'ball_decorator',
+)
+
+
+choices: Tuple[str] = (
     "It is certain",
     "Without a doubt", 
     "You may rely on it",
@@ -24,8 +33,9 @@ choices: List[str] = [
     "Outlook not so good",
     "My sources say no",
     "Very doubtful",
-    "My reply is no"
-]
+    "My reply is no",
+    "I'm not sure, but I do know that you are very sus",
+)
 
 
 PT = TypeVar('PT')
@@ -35,7 +45,7 @@ RT = TypeVar('RT')
 def ball_decorator(func: Callable[PT, RT]) -> Callable[PT, RT]:
     @wraps(func)
     def wrapper(*args, **kwargs) -> RT:
-        kwargs['response'] = random.choice(choices)
+        kwargs['response'] = ball_algorithm_.choice(choices)
         return func(*args, **kwargs)
     
     return wrapper
