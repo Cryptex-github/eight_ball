@@ -15,7 +15,7 @@ __all__: Tuple[str] = (
 
 choices: Tuple[str] = (
     "It is certain",
-    "Without a doubt", 
+    "Without a doubt",
     "You may rely on it",
     "Yes definitely",
     "It is decidedly so",
@@ -47,5 +47,5 @@ def ball_decorator(func: Callable[PT, RT]) -> Callable[PT, RT]:
     def wrapper(*args, **kwargs) -> RT:
         kwargs['response'] = ball_algorithm_.choice(choices)
         return func(*args, **kwargs)
-    
+
     return wrapper
